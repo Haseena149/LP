@@ -1,0 +1,27 @@
+<form style="border:2" [formGroup]="bookingform">
+    <h2>Booking For Wash/Maintanance</h2>
+    VehicalName:<input type="text" formControlName="vehicalname"><br>
+    VehicalType:
+    <select formControlName="vehicaltype" >
+    <option>Hatch Back</option>
+    <option>SUV</option>
+    <option>Sedan</option>
+    </select><br><br>
+    Contact Person Name:<input type="text" formControlName="personname"><br>
+    Contact Person Mobile:<input type="text" formControlName="personmobile"><br>
+    ServiceType:<select formControlName="servicetype">
+       
+                    <option>Hatch Back</option>
+                    <option>SUV</option>
+                    <option>Sedan</option>
+            </select><br><br>
+    Requirements:<input type="text" size="30" formControlName="requirements"><br>
+    Is?PickUp:<input type="radio" name="yes" formControlName="yes">yes
+    <input type="radio"  name="no" formControlName="no">no<br><br>
+    Area Location:<input type="text" formControlname="arealocation" ><br>
+    Pickup Date:<input type="text" formControlname="pickupdate" required><br>
+    Pickup Location:<input type="text" formControlname="picklocation"  required><br>
+    Budget Price:<input type="text" formControlname="budgetprice"  required><br>
+    <button>Submit</button>
+    <button>Cancel</button>
+</form>

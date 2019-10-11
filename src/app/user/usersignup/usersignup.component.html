@@ -1,0 +1,16 @@
+<form [formGroup]="carwashform">
+        <h2>User Signup</h2>
+        name:<input type="text"  name="name" formControlName="username"><br>
+        password:<input type="text" name="password" formControlName="password"><br>
+        otp:<input type="text"  formControlName="otp">
+      <button (click)="gotosetpasswordpage()" >Signup</button>
+        <button>cancel</button>
+</form>
+<table *ngIf="data">
+        <tr *ngFor="let c of data">
+            <td>{{c.username}}</td>
+            <td>{{c.password}}</td>
+            <td>{{c.otp}}</td>
+    
+        </tr>
+    </table>

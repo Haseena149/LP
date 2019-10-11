@@ -1,0 +1,9 @@
+<form [formGroup]="carwashform">
+    <h2>UserLogin</h2>
+    username:<input type="text"  name="username" formControlName="username"><br>
+    password:<input type="password"  formControlName="password"><br>
+    <button (click)="userlogin(carwashform)">Login</button>
+    <button >Cancel</button>
+    <a routerLink="usersignup">are you new User?SignUp</a><br>
+    <a routerLink="forgotpasword">ForGotPassword</a>
+</form>

@@ -1,0 +1,11 @@
+button{
+    background-color:plum;
+    width:300px;
+    height:150px; 
+    margin:5em 5em 5em 15em;
+    border-radius: 5px 10px 5px;
+    color:hotpink;
+}
+button:hover{
+    background-color: chartreuse;
+}
